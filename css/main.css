@@ -16,8 +16,7 @@ body {
 ======================================== */
 
 html,
-body,
-.page-wrapper {
+body {
   width: 100%;
   height: 100%;
 }
@@ -31,10 +30,13 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a:link {
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -42,8 +44,22 @@ a:hover {
   font-weight: bold;
 }
 
+.wrapper a:link {
+  font-weight: normal;
+}
+
+.wrapper a:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 abbr[title] {
   border-bottom: none;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /* HEADER for mobile device
@@ -76,7 +92,8 @@ header[role=banner] {
   position: absolute;
   top: 190px;
   left: 15px;
-  width: 55%;
+  width: 52%;
+  text-align: center;
   font-size: 0.8em;
 }
 
@@ -84,35 +101,54 @@ header[role=banner] {
 ======================================== */
 
 .main {
-  text-align: justify;
-
+  height: 100%;
+  padding: 0 15px;
+  text-align: center;
 }
 
 /* Preamble Styles
 ======================================== */
 
 .preamble {
-  font-size: 0.8em;
-  border-bottom: 1px solid black;
-
+  padding: 0 20px;
+  font-size: 0.9em;
+  border-bottom: 1px solid #000;
 }
-
 
 /* Sidebar Styles
 ======================================== */
 
-.sidebar {
-  padding: 10px 20px 0 0;
-  font-size: 0.8em;
+.wrapper {
+  padding: 5px 0 20px;
+  text-align: center;
+  font-size: 0.9em;
+  min-height: 100%;
+
+  background-image: url("../img/b2bild3.jpg");
+  background-image: -ms-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
+  background-image: -moz-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
+  background-image: -o-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
+  background-image: -webkit-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
+  background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.wrapper h3 {
+  font-size: 1.4em;
+}
 
 /* FOOTER
 ======================================== */
 
 footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
   text-align: center;
-  padding: 5px 0;
+  border-top: 1px solid #000;
 }
 
 /* COLOR Styles
@@ -126,13 +162,30 @@ header[role=banner] {
   background-color: #ececec;
 }
 
+a:link {
+  color: #000;
+}
+
 a:visited {
-  color: #c0392b;
+  color: #000;
 }
 
 h1, h2, h3, p {
   color: #2c3e50;
 }
+
+.wrapper h3 {
+  color: #000;
+}
+
+.wrapper a:link {
+  color: #fff;
+}
+
+.wrapper a:visited {
+  color: #fff;
+}
+
 
 /* Media Queries
 ======================================== */
@@ -146,7 +199,6 @@ h1, h2, h3, p {
     top: 220px;
     left: 20px;
     width: 50%;
-    font-size: 0.8em;
   }
 
   /* Preamble Styles
@@ -154,11 +206,45 @@ h1, h2, h3, p {
 
   .preamble {
     text-align: center;
-    padding: 0 30px 20px;
+    padding: 0 30px 0;
   }
 
-}
+  /* Explanation Styles
+  ======================================== */
 
+  .explanation {
+    display: inline-block;
+    width: 40%;
+    margin: 0 20px;
+    float: left;
+  }
+
+  /* Participation Styles
+  ======================================== */
+
+  .participation {
+    display: inline-block;
+    width: 40%;
+    margin: 0 20px;
+    float: left;
+  }
+
+  /* Benefits Styles
+  ======================================== */
+
+  .benefits {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  /* Requirements Styles
+  ======================================== */
+
+  .requirements {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
 
 @media (min-width: 769px) {
 
@@ -169,7 +255,6 @@ h1, h2, h3, p {
     top: 250px;
     left: 20px;
     width: 42%;
-    font-size: 0.8em;
   }
 
   /* Main Styles
@@ -180,21 +265,79 @@ h1, h2, h3, p {
     padding-left: 20px;
     float: left;
     height: 100%;
-    width: 65%;
+    width: 60%;
   }
 
   /* Sidebar Styles
   ======================================== */
 
-  .sidebar {
-    padding: 10px 0 0 50px;
-    font-size: 0.9em;
+  .wrapper {
+    margin: 30px auto;
+    padding-bottom: 160px;
     display: inline-block;
     float: left;
+    width: 30%;
+    height: 100%;
+    font-size: 0.8em;
+  }
+
+  .wrapper h3 {
+    font-size: 1.4em;
+  }
+
+  /* Explanation Styles
+  ======================================== */
+
+  .explanation {
+    width: 40%;
+  }
+
+  /* Participation Styles
+  ======================================== */
+
+  .participation {
+    width: 40%;
+  }
+
+}
+
+
+@media (min-width: 940px) {
+
+  /* Main Styles
+  ======================================== */
+
+  .main {
+    width: 62%;
+  }
+
+  /* Sidebar Styles
+  ======================================== */
+
+  .wrapper {
+    margin: 30px 20px;
     width: 25%;
     height: 100%;
   }
 
+  /* Explanation Styles
+  ======================================== */
 
+  .explanation {
+    width: 30%;
+  }
 
+  /* Participation Styles
+  ======================================== */
+
+  .participation {
+    width: 30%;
+  }
+
+  /* Benefits Styles
+  ======================================== */
+
+  .benefits {
+    width: 19%;
+  }
 }
