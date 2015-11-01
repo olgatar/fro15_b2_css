@@ -74,9 +74,6 @@ header[role=banner] {
   padding-top: 5px;
 
   background-image: url("../img/b2bild1.jpg");
-  background-image: -ms-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
-  background-image: -moz-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
-  background-image: -o-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
   background-image: -webkit-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
   background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
 
@@ -131,9 +128,6 @@ header[role=banner] {
   min-height: 100%;
 
   background-image: url("../img/b2bild3.jpg");
-  background-image: -ms-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
-  background-image: -moz-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
-  background-image: -o-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
   background-image: -webkit-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
   background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild3.jpg");
 
