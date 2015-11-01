@@ -74,9 +74,9 @@ header[role=banner] {
 
 .summary {
   position: absolute;
-  top: 230px;
-  left: 25px;
-  width: 75%;
+  top: 190px;
+  left: 15px;
+  width: 55%;
   font-size: 0.8em;
 }
 
@@ -103,16 +103,32 @@ h1, h2, h3, p {
 /* Media Queries
 ======================================== */
 
+@media (min-width: 481px) {
+
+  /* Summary Styles
+  ======================================== */
+
+  .summary {
+    top: 220px;
+    left: 20px;
+    width: 50%;
+    font-size: 0.8em;
+  }
+
+
+}
+
+
 @media (min-width: 769px) {
 
   /* Summary Styles
   ======================================== */
 
   .summary {
-    top: 240px;
+    top: 250px;
     left: 20px;
     width: 42%;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
 
