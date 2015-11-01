@@ -1,0 +1,119 @@
+/* Import normalize.css
+======================================== */
+
+@import url("normalize.css");
+
+/* Import FONTS
+======================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Itim");
+
+body {
+  font-family: 'Itim', cursive, sans-serif;
+}
+
+/* GENERAL Style
+======================================== */
+
+html,
+body,
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* NAV and Anchor elements style
+======================================== */
+
+nav ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+abbr[title] {
+  border-bottom: none;
+}
+
+/* HEADER for mobile device
+======================================== */
+
+header[role=banner] {
+  width: 100%;
+  height: 340px;
+  margin: 0 auto;
+  padding-top: 5px;
+
+  background-image: url("../img/b2bild1.jpg");
+  background-image: -ms-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
+  background-image: -moz-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
+  background-image: -o-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
+  background-image: -webkit-linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
+  background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(236,236,236,1) 100%), url("../img/b2bild1.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+/* Summary Styles
+======================================== */
+
+.summary {
+  position: absolute;
+  top: 230px;
+  left: 25px;
+  width: 75%;
+  font-size: 0.8em;
+}
+
+
+/* COLOR Styles
+======================================== */
+
+body {
+  background-color: #ececec;
+}
+
+header[role=banner] {
+  background-color: #ececec;
+}
+
+a:visited {
+  color: #c0392b;
+}
+
+h1, h2, h3, p {
+  color: #2c3e50;
+}
+
+/* Media Queries
+======================================== */
+
+@media (min-width: 769px) {
+
+  /* Summary Styles
+  ======================================== */
+
+  .summary {
+    top: 240px;
+    left: 20px;
+    width: 42%;
+    font-size: 1em;
+  }
+
+
+}
