@@ -29,7 +29,7 @@ h1, h2, h3 {
 /* NAV and Anchor elements style
 ======================================== */
 
-nav ul {
+ul {
   list-style: none;
 }
 
@@ -80,6 +80,40 @@ header[role=banner] {
   font-size: 0.8em;
 }
 
+/* Main Styles
+======================================== */
+
+.main {
+  text-align: justify;
+
+}
+
+/* Preamble Styles
+======================================== */
+
+.preamble {
+  font-size: 0.8em;
+  border-bottom: 1px solid black;
+
+}
+
+
+/* Sidebar Styles
+======================================== */
+
+.sidebar {
+  padding: 10px 20px;
+  font-size: 0.8em;
+}
+
+
+/* FOOTER
+======================================== */
+
+footer {
+  text-align: center;
+  padding: 5px 0;
+}
 
 /* COLOR Styles
 ======================================== */
@@ -115,6 +149,13 @@ h1, h2, h3, p {
     font-size: 0.8em;
   }
 
+  /* Preamble Styles
+  ======================================== */
+
+  .preamble {
+    text-align: center;
+    padding: 0 30px 20px;
+  }
 
 }
 
@@ -130,6 +171,30 @@ h1, h2, h3, p {
     width: 42%;
     font-size: 0.8em;
   }
+
+  /* Main Styles
+  ======================================== */
+
+  .main {
+    display: inline-block;
+    padding-left: 20px;
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+
+  /* Sidebar Styles
+  ======================================== */
+
+  .sidebar {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    display: inline-block;
+    float: right;
+    width: 25%;
+    height: 100%;
+  }
+
 
 
 }
